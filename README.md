@@ -29,7 +29,7 @@ This commit adds an update checking mechanism to the script and introduces a new
 
     ```bash
     git clone https://github.com/Drewsif/gemini-commit-message-hook
-    cd gemini-commit-msg-hook
+    cd gemini-commit-message-hook
     ```
 
 2. **Configure your API Key:**
@@ -61,7 +61,6 @@ This commit adds an update checking mechanism to the script and introduces a new
 3. **Install the hook:**
 
     Run the installation script in the root of the repository where you want to use the hook.
-
     ```bash
     python install.py
     ```
