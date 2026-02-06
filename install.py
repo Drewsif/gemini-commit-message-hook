@@ -28,7 +28,7 @@ def main() -> None:
     hook_path = HOOK_DIR / HOOK_NAME
     script_path = str((SCRIPT_DIR / SCRIPT_NAME).resolve()).replace("\\", "\\\\")
 
-    hook_content = f"#!/bin/sh\npython {script_path} $1\n"
+    hook_content = f'#!/bin/sh\npython {script_path} "$@"\n'
 
     hook_path.write_text(hook_content)
 

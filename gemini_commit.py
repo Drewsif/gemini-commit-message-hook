@@ -47,6 +47,7 @@ def get_git_diff() -> str:
         return subprocess.check_output(  # noqa: S603
             [git_executable, "diff", "--staged"],
             encoding="utf-8",
+            errors="replace",
         )
     except subprocess.CalledProcessError:
         # It's not an error if there are no staged changes.
